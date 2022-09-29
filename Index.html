@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rev Panda Products</title>
+    <style>
+      input[type='text'] {
+        width: 100%;
+        padding: 7px;
+        margin: 5px 0;
+        border: 1px solid #000000;
+      }
+      input[type='submit'] {
+        width: 50%;
+        padding: 9px;
+        margin: 5px 0;
+        border: 2px solid #000000;
+        outline: none;
+        background-color: green;
+        color: white;
+      }
+      button {
+        width: 40%;
+        padding: 9px;
+        margin: 5px 0;
+        border: 2px solid #000000;
+        outline: none;
+        background-color: green;
+        font-weight: bold;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="form.php" method="post" name="form1">
+      <h1>Rev Panda Products</h1>
+      <table width="25%" border="0">
+        <tbody>
+          <tr>
+            <td>Product Name</td>
+            <td><input type="text" name="pname" id="pname" /></td>
+          </tr>
+          <tr>
+            <td>Product Code</td>
+            <td><input type="number" name="pcode" id="pcode" /></td>
+          </tr>
+          <tr>
+            <td>Product Price</td>
+            <td><input type="text" name="pprice" id="pprice" /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="submit" name="Submit" value="Add" /></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+    <!-- Extracting component classes: -->
+    <h1>Display</h1>
+    <form method="post" action="a.php" name="form1">
+      <button type="submit" name="submit" value="A">"A"</button>
+    </form>
+    <form method="post" action="abc.php">
+      <button type="submit" name="submit" value="A, B, C">"A", "B," "C"</button>
+    </form>
+    <form method="post" action="cb.php">
+      <button type="submit" name="submit" value="C and B">"C" and "B"</button>
+    </form>
+    <form method="post" action="basc.php">
+      <button type="submit" name="submit" value="B Ascending order">"B" Ascending order.</button>
+    </form>
+    <form method="post" action="bdesc.php">
+      <button type="submit" name="submit" value="B Descending order">"B" Descending order.</button> 
+    </form>
+
+    <!-- <button onclick="window.location.href=='/a.php'">
+    <button class="btn btn-blue" onclick="href='abc.php'">"A", "B," "C"</button>
+    <button class="btn btn-blue" onclick="href='cb.php'">"C" and "B"</button>
+    <button class="btn btn-blue" onclick="href='dasc.php'">"B" Ascending order.</button>
+    <button class="btn btn-blue" onclick="href='desc.php'">"B" Descending order.</button> -->
+  </body>
+</html>
